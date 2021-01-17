@@ -845,18 +845,36 @@ form.main-search {
     margin-bottom: 10px;  
     display: inline-block;
 }
+.video-new-wrapper.about-video-content {
+    position: relative;
+    background: url(../images/video-slide-back-red.jpg) repeat-x bottom -400px left;
+    padding-bottom: 90px;
+    margin-top: 50px;
+}
+.about-video-content .video-content{
+    display: inline-block;
+    position: relative;
+}
 .about-video-content .video-content video{
     border-radius: 3px;
+    height: 591px;
+    width: 1021px;
 }
-
-.about-video-content .video-content img{
+.about-video-content .video-content .img-1{
     position: absolute;
-    z-index: 999;
-    top: 42%;
-    right: 48%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: 100px;
     width: 100px;
     opacity: 0.6;
+}
+.about-video-content .video-content .img-2{
+    position: absolute;
+    top: 3%;
+    right: 2%;
+    height: 25px;
+    width: 25px;
 }
 .about-footer{
     margin-top: 0;
@@ -4603,6 +4621,19 @@ ul.more-boom-by-info li a:hover:after {
         width: 510px;
         left: -200px;
     }
+    .video-new-wrapper.about-video-content {
+        background: url(../images/video-slide-back-red.jpg) repeat-x bottom -480px left;
+    }
+    .about-video-content .video-content video{
+        height: 450px;
+        width: 750px;
+    }
+    .about-video-content .video-content .img-2{
+        top: 4.5%;
+        right: 1.8%;
+        height: 20px;
+        width: 20px;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -5245,15 +5276,22 @@ ul.more-boom-by-info li a:hover:after {
     .cat-trending-inner .post-by-info {
         font-size: 15px;
     }
-    .video-content video{
-        height: 400px;
-        width: 500px;
+    .video-new-wrapper.about-video-content {
+        background: url(../images/video-slide-back-red.jpg) repeat-x bottom -530px left;
     }
-    .about-video-content .video-content img{
-        top: 42%;
-        right: 46%;
+    .about-video-content .video-content video{
+        height: 340px;
+        width: 550px;
+    }
+    .about-video-content .video-content .img-1{
         height: 80px;
         width: 80px;       
+    }
+    .about-video-content .video-content .img-2{
+        right: 1.5%;
+        top: 6%;
+        height: 16px;
+        width: 16px;
     }
 }
 
@@ -5752,25 +5790,34 @@ ul.more-boom-by-info li a:hover:after {
     }
     .about-sub-heading h3{
         font-size: 25px;
+        padding-left: 20px;
     }
     .video-tour-text h3{
         font-size: 25px;
+        padding-left: 0px;
     }
     .video-tour-text h3::before{        
         left: -20px;
         top: 14px;
     }
-    .video-content video{
-        height: 350px;
-        width: 400px;
+    .video-new-wrapper.about-video-content {
+        background: url(../images/video-slide-back-red.jpg) repeat-x bottom -580px left;
+        padding-bottom: 70px;
     }
-    .about-video-content .video-content img{
-        top: 42%;
-        right: 48%;
+    .about-video-content .video-content video{
+        height: 280px;
+        width: 450px;
+    }
+    .about-video-content .video-content .img-1{
         height: 50px;
         width: 50px;       
     }
-    
+    .about-video-content .video-content .img-2{
+        right: 1.5%;
+        top: 6.3%;
+        height: 12px;
+        width: 12px;
+    }   
 }
 
 @media (max-width: 575.98px) {
@@ -6212,19 +6259,27 @@ ul.more-boom-by-info li a:hover:after {
         max-width: 340px;
         padding: 14px 0;
     }
+    .video-new-wrapper.about-video-content {
+        background: url(../images/video-slide-back-red.jpg) repeat-x bottom -630px left;
+        padding-bottom: 60px;
+    }
     .about-sub-heading h3{
         font-size: 25px;
     }
-    .video-content video{
-        height: 300px;
-        width: 350px;
+    .about-video-content .video-content video{
+        height: 200px;
+        width: 330px;
     }
-    .about-video-content .video-content img{
-        top: 42%;
-        right: 46%;
+    .about-video-content .video-content .img-1{
         height: 50px;
         width: 50px;       
     }
+    .about-video-content .video-content .img-2{
+        right: 1.4%;
+        top: 5.6%;
+        height: 9.5px;
+        width: 9.5px;
+    }  
 }
 
 @media (max-width: 360.98px) {
