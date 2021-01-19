@@ -311,3 +311,8 @@ $('.link4-nav4').slick({
     arrows: false,
     focusOnSelect: true
 });
+
+// $('.show-hide').click(function(){
+//     $(this).siblings().css('color', '#E50914');
+
+// });
