@@ -44,12 +44,34 @@ $('#close-search-btn').click(function(event) {
 $('.foto-slider').slick({
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
-    centerMode: true,
+    autoplaySpeed: 3000,    
     variableWidth: true,
     infinite: true,
     prevArrow: $('.foto-prev'),
-    nextArrow: $('.foto-next')
+    nextArrow: $('.foto-next'),
+    responsive: [
+        {
+            breakpoint: 1199,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
 });
 
 

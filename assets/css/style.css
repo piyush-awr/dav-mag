@@ -203,6 +203,9 @@ header.top-bar span.top-logo .dm-top-logo {
     position: relative;
     margin-top: 54px;
 }
+.top-hero-banner.inner-banner{
+    height: 480px;
+}
 
 .top-hero-banner.boom-banner {
     background-image: url(../images/boom-hero-banner.jpeg);
@@ -210,6 +213,17 @@ header.top-bar span.top-logo .dm-top-logo {
 
 .top-hero-banner.category-banner {
     background-image: url(../images/category-banner.jpg);
+}
+.top-hero-banner.category-banner.daydreamer-banner {
+    background: #DFDFDF;
+    height: 200px;
+}
+.top-hero-banner.category-banner.daydreamer-banner .banner-inner-text{
+    padding-top: 15px;
+}
+.top-hero-banner.category-banner.daydreamer-banner h1{
+    color: #000;
+    text-shadow: none;
 }
 
 .top-hero-banner.about-banner{
@@ -535,6 +549,9 @@ form.main-search {
     letter-spacing: -0.63px;
     font-weight: bold;
 }
+.trending-inner-box.inner-nav-box{
+    margin-top: 54px;
+}
 
 .trending-list-box {
     overflow-x: auto;
@@ -560,6 +577,9 @@ form.main-search {
 .trending-inner-box ul.tending-list li a {
     color: #E50914;
     position: relative;
+}
+.trending-inner-box ul.tending-list li.active-nav{
+    font-weight: bold;
 }
 
 .trending-inner-box ul.tending-list li a:after {
@@ -1446,7 +1466,7 @@ ul.trending-detail-info li img {
     overflow: hidden;
     cursor: pointer;
     position: relative;
-    width: 455px;
+    width: 260px;
 }
 
 .foto-slide-inner .foto-image-part {
@@ -1472,7 +1492,25 @@ ul.trending-detail-info li img {
     z-index: 12;
     background: rgba(0, 0, 0, 0.25);
     border-radius: 100%;
-    padding: 15px;
+    padding: 12px;
+}
+.foto-slide-inner .foto-share-img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 12;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 100%;
+    padding: 12px;
+}
+.foto-slide-inner .foto-slide-flip-content .foto-share-img-flip{
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    z-index: 12;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 100%;
+    padding: 12px;
 }
 
 .foto-slide-inner .foto-slide-content {
@@ -3356,6 +3394,10 @@ ul.more-boom-by-info li a:hover:after {
     transform: translateY(-50%);
     left: -230px;
 }
+.category-post-content-box.daydreamer-box{
+    padding: 20px 40px;
+    border-radius: 3px;
+}
 
 .category-name {
     font-weight: bold;
@@ -3375,6 +3417,9 @@ ul.more-boom-by-info li a:hover:after {
     overflow: hidden;
     margin-bottom: 10px;
 }
+.category-heading.daydreamer-heading {
+    height: auto;
+}
 
 .cat-trending-inner .category-heading {
     font-size: 20px;
@@ -3385,6 +3430,7 @@ ul.more-boom-by-info li a:hover:after {
     font-size: 28px;
     height: 101px;
 }
+
 
 .subtitle-name {
     font-weight: 500;
@@ -3446,6 +3492,9 @@ ul.more-boom-by-info li a:hover:after {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.social-sharing-part.daydreamer-social{
+    top: 10px;
 }
 
 .social-sharing-part a {
@@ -3587,9 +3636,6 @@ ul.more-boom-by-info li a:hover:after {
         width: 400px;
     }
     
-    .foto-slide-inner {
-        width: 392px;
-    }
     .foto-slide-inner .foto-image-part {
         height: 496px;
     }
@@ -3700,9 +3746,6 @@ ul.more-boom-by-info li a:hover:after {
         font-size: 19px;
     }
     
-    .foto-slide-inner {
-        width: 340px;
-    }
     .foto-slide-inner .foto-image-part{
         height: 440px;
     }
@@ -3890,18 +3933,21 @@ ul.more-boom-by-info li a:hover:after {
     .trending-right-part img.trending-now {
         height: 24px;
     }
-    .foto-slide-inner {
-        width: 280px;
-    }
     .foto-slide-inner .foto-image-part {
         height: 380px;
     }
-    .foto-slide-inner .foto-camera-img {
-        padding: 12px;
-    }
+    
     .foto-slide-inner .foto-camera-img .foto-carema {
-        height: 28px;
+        height: 22px;
         width: auto;
+    }
+    .foto-slide-inner .foto-share-img .foto-share {
+        height: 22px;
+        width: auto;
+    }
+    .foto-slide-inner .foto-slide-flip-content .foto-share-flip{
+        height: 20px;
+        width: 22px;
     }
  
     .fiction-content-inner .fiction-content-info p,
@@ -4155,6 +4201,10 @@ ul.more-boom-by-info li a:hover:after {
         font-weight: bold;
         margin-top: 10px;
     }
+    .inner-button button:hover{
+        color: #fff;
+        background: #E50914;
+    }
     
     .about-section-video .section-sub-heading {
         color: #404042;
@@ -4190,13 +4240,6 @@ ul.more-boom-by-info li a:hover:after {
         width: 100px;
         opacity: 0.6;
     }
-    .about-video-content .video-content .img-2{
-        position: absolute;
-        top: 3%;
-        right: 2%;
-        height: 25px;
-        width: 25px;
-    }
     .inner-footer{
         margin-top: 0;
     }
@@ -4220,11 +4263,20 @@ ul.more-boom-by-info li a:hover:after {
         margin-top: 15px;
         padding: 0;
     }
+    .more-button button:hover{
+        background-color: #E50914;
+    }
+    .more-button button:hover a{
+        color: #fff;
+    }
     .more-button button a{
         color: #E50914;
         text-decoration: none;
         display: block;
         padding: 10px 20px;
+    }
+    .more-button.more-button-home a{
+        padding: 10px 35px;
     }
     .more-button.video-slider button{
         border: 1px solid #fff;
@@ -4238,7 +4290,13 @@ ul.more-boom-by-info li a:hover:after {
         color: #fff;
         text-decoration: none;
         display: block;
-        padding: 10px 20px;
+        padding: 10px 35px;
+    }
+    .more-button.video-slider button:hover{
+        background-color: #fff;
+    }
+    .more-button.video-slider button:hover a{
+        color: #E50914;
     }
     .redazione-section .redazione-text ul{
         margin-top: 10px;
@@ -4342,6 +4400,9 @@ ul.more-boom-by-info li a:hover:after {
     }
     .top-hero-banner {
         height: 580px;
+    }
+    .top-hero-banner.inner-banner{
+        height: 460px;
     }
     .main-nav .navbar ul.navbar-nav li a {
         font-size: 16px;
@@ -4467,6 +4528,9 @@ ul.more-boom-by-info li a:hover:after {
     .recensioni-inner-content p {
         font-size: 16px;
         height: 63px;
+    }
+    .foto-slide-inner{
+        width: 300px;
     }
     .foto-slide-inner .foto-slide-content h2 {
         font-size: 22px;
@@ -4707,12 +4771,6 @@ ul.more-boom-by-info li a:hover:after {
         height: 450px;
         width: 750px;
     }
-    .about-video-content .video-content .img-2{
-        top: 4.5%;
-        right: 1.8%;
-        height: 20px;
-        width: 20px;
-    }
     .advertising-cards .contactus-card{
         height: 220px;
     }
@@ -4750,6 +4808,9 @@ ul.more-boom-by-info li a:hover:after {
     
     .top-hero-banner {
         height: 450px;
+    }
+    .top-hero-banner.inner-banner{
+        height: 420px;
     }
     .banner-inner-text h1 {
         font-size: 35px;
@@ -5056,6 +5117,16 @@ ul.more-boom-by-info li a:hover:after {
     .content-category-info {
         font-size: 12px;
         padding: 6px 10px;
+    }
+    .foto-slide-inner{
+        width: 340px;
+    }
+    .foto-slide-inner .foto-slide-flip-content .foto-share-img-flip{
+        padding: 10px;
+    }
+    .foto-slide-inner .foto-slide-flip-content .foto-share-flip{
+        height: 18px;
+        width: 20px;
     }
     .foto-slide-inner .foto-image-part,
     .foto-slide-inner .foto-slide-flip-content {
@@ -5391,14 +5462,14 @@ ul.more-boom-by-info li a:hover:after {
         height: 80px;
         width: 80px;       
     }
-    .about-video-content .video-content .img-2{
-        right: 1.5%;
-        top: 6%;
-        height: 16px;
-        width: 16px;
-    }
     .advertising-cards .contactus-card{
         height: 200px;
+    }
+    .category-heading.daydreamer-heading {
+        height: 80px;
+    }
+    .category-post-content-box.daydreamer-box{
+        padding: 20px;
     }
 }
 
@@ -5433,6 +5504,9 @@ ul.more-boom-by-info li a:hover:after {
     }
     .top-hero-banner {
         height: 420px;
+    }
+    .top-hero-banner.inner-banner{
+        height: 380px;
     }
     .top-hero-banner.boom-banner {
         background-position: right top;
@@ -5493,7 +5567,7 @@ ul.more-boom-by-info li a:hover:after {
         padding-right: 0;
     }
     .foto-slide-inner {
-        width: 270px;
+        width: 255px;
         margin-top: 55px;
     }
     .foto-slide-inner .foto-image-part,
@@ -5890,13 +5964,10 @@ ul.more-boom-by-info li a:hover:after {
     .about-video-content .video-content .img-1{
         height: 50px;
         width: 50px;       
-    }
-    .about-video-content .video-content .img-2{
-        right: 1.5%;
-        top: 6.3%;
-        height: 12px;
-        width: 12px;
-    }   
+    }  
+    .category-heading.daydreamer-heading {
+        height: auto;
+    } 
 }
 
 @media (max-width: 575.98px) {
@@ -5909,6 +5980,12 @@ ul.more-boom-by-info li a:hover:after {
     }
     .top-hero-banner {
         height: 340px;
+    }
+    .top-hero-banner.inner-banner{
+        height: 320px;
+    }
+    .top-hero-banner.category-banner.daydreamer-banner{
+        height: 120px;
     }
     .banner-inner-text h1 {
         font-size: 24px;
@@ -5953,6 +6030,9 @@ ul.more-boom-by-info li a:hover:after {
     .ultme-notizie-slick-nav button.slick-arrow,
     .more-boom-slick-nav button.slick-arrow {
         padding: 5px 8px;
+    }
+    .foto-slide-inner{
+        width: 440px;
     }
     .slick-nav button.slick-arrow.prev01 {
         margin-right: 10px;
@@ -6365,13 +6445,7 @@ ul.more-boom-by-info li a:hover:after {
     .about-video-content .video-content .img-1{
         height: 50px;
         width: 50px;       
-    }
-    .about-video-content .video-content .img-2{
-        right: 1.4%;
-        top: 5.6%;
-        height: 9.5px;
-        width: 9.5px;
-    }  
+    } 
     .about-section-info.redazione-section .row{
         margin-bottom: 50px;
     }
@@ -6411,6 +6485,9 @@ ul.more-boom-by-info li a:hover:after {
         width: 127px;
         -ms-flex: 0 0 127px;
         flex: 0 0 127px;
+    }
+    .foto-slide-inner{
+        width: 310px;
     }
     .video-small-slider .video-small-slide-inner {
         width: 130px;
