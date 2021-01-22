@@ -142,6 +142,51 @@ $('.pagelle-s-slider02').slick({
 
 });
 
+$('.pagelle-s-slider03').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: $('.pagelle-prev-1'),
+    nextArrow: $('.pagelle-next-1'),
+    focusOnSelect: true,
+    vertical: true,
+    responsive: [{
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 361,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
+
+});
+$('.pagelle-s-slider04').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: $('.pagelle-prev-2'),
+    nextArrow: $('.pagelle-next-2'),
+    focusOnSelect: true,
+    vertical: true,
+    responsive: [{
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 361,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
+
+});
+
 
 $('.boom-slider').slick({
     slidesToShow: 1,
