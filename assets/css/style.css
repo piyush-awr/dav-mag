@@ -3392,13 +3392,13 @@ ul.more-boom-by-info li a:hover:after {
 .category-post-content-box {
     background: #fff;
     box-shadow: 0px 6px 12px rgba(100, 100, 100, 0.20);
-    width: 820px;
-    padding: 50px;
     position: absolute;
+    width: 600px;
+    padding: 20px 30px;
+    left: -240px;
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    left: -230px;
 }
 .category-post-content-box.daydreamer-box{
     padding: 20px 40px;
@@ -3537,20 +3537,28 @@ ul.more-boom-by-info li a:hover:after {
     display: inline-block;
     vertical-align: top;
 }
-.related-cat-inner a:hover h2{
+.category-post-content-box a:hover h2,
+.category-post-content-box a:hover .subtitle-name,
+.category-post-content-box a:hover .post-by-info{
     color:  #E50914;
 }
-.new-cat-content a:hover h2{
+.new-cat-section-inner a:hover h2,
+.new-cat-section-inner a:hover .subtitle-name,
+.new-cat-section-inner a:hover .post-by-info{
     color:  #E50914;
 }
-.cat-trending-content a:hover h2{
+.cat-trending-inner a:hover h2,
+.cat-trending-inner a:hover .post-by-info{
     color:  #E50914;
 }
-.related-cat-content a:hover h3{
+.related-cat-inner a:hover h3,
+.related-cat-inner a:hover h2,
+.related-cat-inner a:hover .subtitle-name,
+.related-cat-inner a:hover .post-by-info{
     color:  #E50914;
 }
-.pagelle-small-content-part a:hover h4,
-.pagelle-small-content-part a:hover h3{
+.pagelle-small-slider .slide a:hover h4,
+.pagelle-small-slider .slide a:hover h3{
     color:  #E50914;
 }
 .related-cat-image {
@@ -3739,10 +3747,6 @@ ul.more-boom-by-info li a:hover:after {
         font-size: 18px;
     }
     
-    .category-post-content-box {
-        left: -290px;
-    }
-    
     .top-hero-banner {
         background-size: cover;
         height: 786px;
@@ -3884,10 +3888,6 @@ ul.more-boom-by-info li a:hover:after {
     
     .category-banner .banner-inner-text h1::before {
         top: 40px;
-    }
-    
-    .category-post-content-box {
-        width: 750px;
     }
     
     .newsletter-inner-part form.newsletter-form {
@@ -4108,12 +4108,6 @@ ul.more-boom-by-info li a:hover:after {
     
     .category-banner .banner-inner-text h1::before {
         top: 35px;
-    }
-     
-    .category-post-content-box {
-        width: 600px;
-        padding: 25px;
-        left: -240px;
     }
     
     .follow-us-content {
@@ -4458,6 +4452,7 @@ ul.more-boom-by-info li a:hover:after {
     .inner-article-header .article-para{
         margin-bottom: 20px;
         color: #7A7A7A;
+        padding-left: 0;
     }
     .inner-article-header .article-writer-info img{
         margin-right: 10px;
