@@ -241,6 +241,9 @@ header.top-bar span.top-logo .dm-top-logo {
 .top-hero-banner.contactus-banner{
     background-image: url(../images/MaskGroup20.jpg);
 }
+.top-hero-banner.shop-banner{
+    background-image: url(../images/MaskGroup21.jpg);
+}
 
 .banner-inner-text {
     height: 100%;
@@ -283,6 +286,14 @@ header.top-bar span.top-logo .dm-top-logo {
     letter-spacing: -1.03px;
     text-shadow: 0 0 43px rgba(0, 0, 0, 1);
     margin-top: 230px;
+}
+.shop-banner .banner-inner-text h1 {
+    width: 50%;
+    font-size: 45px;
+    color: #fff;
+    letter-spacing: -1.03px;
+    text-shadow: 0 0 43px rgba(0, 0, 0, 1);
+    margin-top: 50px;
 }
 
 .banner-inner-text .tv-category-top {
@@ -370,6 +381,7 @@ header.top-bar span.top-logo .dm-top-logo {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    align-items: center;
 }
 
 .main-nav .navbar ul.navbar-nav li {
@@ -390,12 +402,12 @@ header.top-bar span.top-logo .dm-top-logo {
 
 .main-nav .navbar ul.navbar-nav li a {
     font-weight: 800;
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     line-height: 1.2;
     letter-spacing: -0.43px;
     text-transform: uppercase;
-    padding: 8px 15px;
+    padding: 8px 16px;
 }
 
 .main-nav .navbar ul.navbar-nav li.active a,
@@ -3921,7 +3933,7 @@ ul.more-boom-by-info li a:hover:after {
         height: 20px;
     }
     .main-nav .navbar ul.navbar-nav li .boom-menu-icon {
-        height: 26px;
+        height: 24px;
     }
     .navbar-brand .dm-menu-logo {
         width: auto;
@@ -4590,6 +4602,9 @@ ul.more-boom-by-info li a:hover:after {
         color: #E50914;
         font-weight: bold;
     }
+    .reply-section a.login-with-fb{
+        margin-left: 8px;
+    }
     .article-text-section .reply-section form{
         margin: 30px 0;
     }
@@ -4748,6 +4763,23 @@ ul.more-boom-by-info li a:hover:after {
     .videos-archive .videos-col h4{
         padding: 20px 10px 20px 40px;
         font-size: 16px;
+    }
+    .inner-section-content .shopping-features{
+        margin: 50px 0;
+    }
+    .shopping-features .shop-feature-1,
+    .shopping-features .shop-feature-2,
+    .shopping-features .shop-feature-3{
+        border-right: 1px solid #808080;
+        padding-right: 25px;
+    }
+    .shopping-features .shop-feature img{
+        width: 75px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .shopping-features .shop-feature p{
+        font-weight: bold;
     }
     
     
@@ -5178,7 +5210,7 @@ ul.more-boom-by-info li a:hover:after {
     }
     .mobile-nav-logo ul.top-social-list li,
     .mobile-nav-logo ul.top-link-list li {
-        padding-left: 22px;
+        padding: 5px 18px;
     }
     header.top-bar ul.top-social-list li img,
     header.top-bar ul.top-link-list li img,
@@ -5240,6 +5272,7 @@ ul.more-boom-by-info li a:hover:after {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        align-items: normal;
     }
     .main-nav .navbar ul.navbar-nav li {
         margin-right: 0;
@@ -5919,6 +5952,23 @@ ul.more-boom-by-info li a:hover:after {
     .article-text-section .article-text h5{
         font-size: 18px;
     }
+    .shop-banner .banner-inner-text h1 {
+        width: 60%;
+        font-size: 35px;
+        margin-top: 50px;
+    }
+    .shopping-features .shop-feature-1,
+    .shopping-features .shop-feature-2,
+    .shopping-features .shop-feature-3,
+    .shopping-features .shop-feature-4{
+        padding-right: 25px;
+    }
+    .shopping-features .shop-feature img{
+        width: 65px;
+    }
+    .shopping-features .shop-feature p{
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -6443,6 +6493,15 @@ ul.more-boom-by-info li a:hover:after {
     .video-listing-header .shortby-button a{
         font-size: 14px;
     }
+    .shopping-features .shop-feature-2{
+        border: none;
+    }
+    .shopping-features .shop-feature img{
+        width: 60px;
+    }
+    .shopping-features .shop-feature{
+        margin-bottom: 15px;
+    }
     
 }
 
@@ -6954,6 +7013,17 @@ ul.more-boom-by-info li a:hover:after {
     }
     .videos-archive .videos-col h4{
         padding: 25px 10px 20px 50px;
+    }
+    .shop-banner .banner-inner-text h1 {
+        width: 60%;
+        font-size: 28px;
+        margin-top: 50px;
+    }
+    .shopping-features .shop-feature img{
+        width: 55px;
+    }
+    .shopping-features .shop-feature p{
+        font-size: 13px;
     }
 }
 
