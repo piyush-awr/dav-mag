@@ -199,7 +199,8 @@ header.top-bar span.top-logo .dm-top-logo {
     background-image: url(../images/home-hero-banner.jpeg);
     background-repeat: no-repeat;
     background-position: top center;
-    height: 957px;
+    background-size: cover;
+    height: 480px;
     position: relative;
     margin-top: 54px;
 }
@@ -1124,12 +1125,11 @@ form.main-search {
 
 .content-category-info {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.2;
-    color: #fff;
+    color:#E50914;
     letter-spacing: -0.6px;
-    padding: 7px 12px;
-    border-radius: 5px;
+    padding: 7px 0;
     display: inline-block;
     text-transform: uppercase;
 }
@@ -1160,7 +1160,6 @@ form.main-search {
     font-size: 25px;
     line-height: 1.3;
     letter-spacing: -0.4px;
-    margin-top: 15px;
     height: 65px;
     overflow: hidden;
 }
@@ -1247,7 +1246,6 @@ form.main-search {
     font-size: 25px;
     line-height: 1.3;
     letter-spacing: -0.6px;
-    margin-top: 15px;
     height: 65px;
     overflow: hidden;
 }
@@ -1336,7 +1334,6 @@ form.main-search {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    margin-top: 15px;
 }
 
 .trending-large-inner .trending-inner-content h2 {
@@ -3764,12 +3761,7 @@ ul.more-boom-by-info li a:hover:after {
     }
     .most-article-inner .most-article-content h3 {
         font-size: 18px;
-    }
-    
-    .top-hero-banner {
-        background-size: cover;
-        height: 786px;
-    }   
+    }  
     
     .section-sub-heading .red-sanremo-img {
         width: auto;
@@ -4312,7 +4304,8 @@ ul.more-boom-by-info li a:hover:after {
         padding: 10px 20px;
     }
     .more-button.more-button-home a{
-        padding: 10px 35px;
+        padding: 15px 50px;
+        font-size: 18px;
     }
     .more-button.video-slider button{
         border: 1px solid #fff;
@@ -4326,7 +4319,8 @@ ul.more-boom-by-info li a:hover:after {
         color: #fff;
         text-decoration: none;
         display: block;
-        padding: 10px 35px;
+        padding: 15px 50px;
+        font-size: 18px;
     }
     .more-button.video-slider button:hover{
         background-color: #fff;
@@ -4868,16 +4862,16 @@ ul.more-boom-by-info li a:hover:after {
     .products-category .product-info .product-img:hover .shop-icons{
         visibility: initial;
     }
-    .product-info .product-img a{
+    .product-info .product-img .shop-icons a{
         color: #000;
         background-color: #fff;
         padding: 8px 10px;
         margin-right: 4px;
     }
-    .product-info .product-img a i{
+    .product-info .product-img .shop-icons a i{
         font-size: 14px;
     }
-    .product-info .product-img a:hover{
+    .product-info .product-img .shop-icons a:hover{
         color: #fff;
         background-color:  #E50914;
         transition: 0.3s ease;
@@ -5123,9 +5117,6 @@ ul.more-boom-by-info li a:hover:after {
     .banner-inner-text h1 {
         font-size: 40px;
         margin-top: 150px;
-    }
-    .top-hero-banner {
-        height: 580px;
     }
     .top-hero-banner.inner-banner{
         height: 460px;
@@ -5665,6 +5656,7 @@ ul.more-boom-by-info li a:hover:after {
     }
     #blank-div.display-blank-div {
         display: block;
+        background-color: rgba(255,255,255,0.95)!important;
     }
     .main-nav .navbar .nav-bar-button.close-menu-open {
         height: 40px;
@@ -6936,7 +6928,7 @@ ul.more-boom-by-info li a:hover:after {
     }
     
     .navbar-manu-outer {
-        width: 75%;
+        width: 80%;
     }
     .top-hero-banner {
         height: 340px;
@@ -7474,7 +7466,7 @@ ul.more-boom-by-info li a:hover:after {
 @media (max-width: 360.98px) {
     .mobile-nav-logo ul.top-social-list li,
     .mobile-nav-logo ul.top-link-list li{
-        padding: 5px 10px;
+        padding: 5px 13px;
     }
     .top-hero-banner.inner-banner{
         height: 250px;
