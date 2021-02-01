@@ -379,6 +379,68 @@ $('.link4-nav4').slick({
     focusOnSelect: true
 });
 
+$('.product-slider-1').slick({
+    slidesToScroll: 1,
+    variableWidth: true,
+    infinite: true,
+    prevArrow: $('.product-prev-1'),
+    nextArrow: $('.product-next-1'),
+    responsive: [
+        {
+            breakpoint: 1199,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});
+
+$('.product-slider-2').slick({
+    slidesToScroll: 1,
+    variableWidth: true,
+    infinite: false,
+    prevArrow: $('.product-prev-2'),
+    nextArrow: $('.product-next-2'),
+    responsive: [
+        {
+            breakpoint: 1199,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});
+
 $(".faq-content .collapse.show").each(function(){
     $(this).prev(".faq-header").find(".fa").addClass("fa-chevron-up").removeClass("fa-chevron-down");
     $(this).prev(".faq-header").find(".ques").css('color','#E50914');
