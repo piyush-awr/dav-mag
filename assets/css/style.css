@@ -200,7 +200,7 @@ header.top-bar span.top-logo .dm-top-logo {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    height: 480px;
+    height: 610px;
     position: relative;
     margin-top: 54px;
 }
@@ -838,11 +838,11 @@ form.main-search {
 
 .ascolti-inner-box .ascolti-caption-box {
     position: absolute;
-    padding: 0 25px 35px;
+    padding: 0 18px 20px;
     bottom: 0;
     left: 0;
     width: 100%;
-    padding-right: 500px;
+    padding-right: 300px;
 }
 
 .ascolti-inner-box .ascolti-caption-box h2 {
@@ -853,29 +853,29 @@ form.main-search {
 
 .ascolti-inner-section .ascolti-content-box {
     background: url(../images/ascolti-tv-back-small.png) no-repeat right top / cover;
-    width: 440px;
+    width: 285px;
     float: right;
     height: 100%;
     overflow: auto;
 }
 
 .ascolti-content-box ul.ascolti-list {
-    padding: 30px 20px;
+    padding: 12px 5px 12px 12px;
 }
 
 .ascolti-content-box ul.ascolti-list li {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 .ascolti-content-box .ascolti-img-section {
-    width: 42px;
-    height: 42px;
+    width: 34px;
+    height: 34px;
     background: #fff;
     text-align: center;
     display: inline-block;
     vertical-align: middle;
-    border-radius: 8px;
+    border-radius: 5px;
     position: relative;
 }
 
@@ -890,8 +890,8 @@ form.main-search {
 
 .ascolti-content-box .ascolti-content-section {
     text-align: left;
-    width: 79%;
-    padding-left: 15px;
+    width: 82%;
+    padding-left: 8px;
     display: inline-block;
     vertical-align: middle;
     position: relative;
@@ -899,8 +899,8 @@ form.main-search {
 }
 
 .ascolti-content-box .ascolti-content-section h4 {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 13px;
+    line-height: 15px;
     color: #fff;
     letter-spacing: -0.267px;
 }
@@ -914,7 +914,7 @@ form.main-search {
 
 .ascolti-content-box .ascolti-content-section h3 {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 22px;
     color: #E50914;
     letter-spacing: -0.267px;
@@ -1299,6 +1299,26 @@ form.main-search {
 
 .tending-small-inner+.tending-small-inner {
     margin-top: 22px;
+}
+.tending-small-inner .trending-inner-content{
+    padding-bottom: 12px;
+}
+.tending-small-inner .trending-inner-content span{
+    font-size: 14px;
+}
+.tending-small-inner .trending-inner-content h2{
+    font-size: 18px;
+    line-height: 1.2;
+}
+.tending-small-inner .trending-inner-content ul{
+    margin-top: 8px;
+}
+.tending-small-inner .trending-inner-content ul li{
+    font-size: 14px;
+}
+.tending-small-inner .trending-inner-content ul li img{
+    width: 25px;
+    padding-right: 5px;
 }
 
 .trending-box-outer {
@@ -1891,16 +1911,10 @@ ul.trending-detail-info li img {
     flex-wrap: wrap;
 }
 
-.guida-content-wrapper .guida-content-box {
-    padding-left: 13px;
-    padding-right: 13px;
-    margin-top: 50px;
-}
-
 .guida-content-wrapper .guida-content-inner {
     position: relative;
-    width: 343px;
-    height: 351px;
+    width: 212px;
+    height: 240px;
 }
 
 .guida-content-wrapper .guida-content-inner .guida-tv-image {
@@ -3678,10 +3692,6 @@ ul.more-boom-by-info li a:hover:after {
     background: #E50914;
     color: #fff;
 }
-  
-    .ascolti-inner-section .ascolti-content-box {
-        width: 400px;
-    }
     
     .foto-slide-inner .foto-image-part {
         height: 496px;
@@ -3696,10 +3706,11 @@ ul.more-boom-by-info li a:hover:after {
         margin-right: -15px;
     }
     .guida-content-wrapper .guida-content-box {
-        width: 25%;
+        width: 20%;
         text-align: center;
         padding-left: 15px;
         padding-right: 15px;
+        margin-top: 50px;
     }
     .guida-content-wrapper .guida-content-inner {
         display: inline-block;
@@ -3791,10 +3802,6 @@ ul.more-boom-by-info li a:hover:after {
     .fiction-content-inner .fiction-content-info p {
         font-size: 20px;
     }
- 
-    .serie-small-slide-inner {
-        width: 270px;
-    }
     
     .video-new-wrapper {
         background-position: bottom -300px left;
@@ -3810,11 +3817,6 @@ ul.more-boom-by-info li a:hover:after {
     
     .pay-block-outer .pay-block-content {
         font-size: 20px;
-    }
-    
-    .guida-content-wrapper .guida-content-inner {
-        width: 330px;
-        height: 338px;
     }
     
     .small-bottom-dot {
@@ -3910,10 +3912,6 @@ ul.more-boom-by-info li a:hover:after {
         width: auto;
         height: 20px;
     }
-   
-    .ascolti-inner-section .ascolti-content-box {
-        width: 280px;
-    }
     
     .ascolti-content-box .ascolti-img-section .ascolti-small-icon {
         width: auto;
@@ -3922,10 +3920,6 @@ ul.more-boom-by-info li a:hover:after {
     .ascolti-content-box .ascolti-img-section .ascolti-small-icon.ascolti-small-icon09 {
         width: 90%;
         height: auto;
-    }
-    
-    .ascolti-inner-box .ascolti-caption-box {
-        padding-right: 340px;
     }
    
     .main-nav .navbar ul.navbar-nav li .shop-menu-icon {
@@ -3953,7 +3947,7 @@ ul.more-boom-by-info li a:hover:after {
     }
 
     .link1-small-slider .slide {
-        width: 260px;
+        width: 205px;
     }
   
     .news-content-part .news-text-info p {
@@ -3990,7 +3984,7 @@ ul.more-boom-by-info li a:hover:after {
     }
  
     .serie-small-slide-inner {
-        width: 245px;
+        width: 198px;
     }
     
     .video-new-heading .section-sub-heading img {
@@ -4006,11 +4000,7 @@ ul.more-boom-by-info li a:hover:after {
         width: 450px;
         left: 120px;
     }
-    
-    .guida-content-wrapper .guida-content-inner {
-        width: 255px;
-        height: 265px;
-    }
+
     .guida-top-small-box {
         height: auto;
         width: 65px;
@@ -5602,6 +5592,9 @@ ul.more-boom-by-info li a:hover:after {
         -ms-flex-direction: column;
         flex-direction: column;
         align-items: normal;
+    }
+    .fixed-body{
+        position: fixed;
     }
     .main-nav .navbar ul.navbar-nav li {
         margin-right: 0;
