@@ -269,30 +269,7 @@ $('.serie-small-slider').slick({
     centerMode: false,
     variableWidth: true,
     infinite: true,
-    focusOnSelect: true,
-    responsive: [
-        {
-            breakpoint: 1199,
-            settings: {
-                slidesToShow: 4,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 991,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 575,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        }
-    ]
+    focusOnSelect: true
 });
 
 
@@ -323,7 +300,6 @@ $('#specialeTab a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
 })
 
 $('.link1-for1').slick({
-    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -333,13 +309,37 @@ $('.link1-for1').slick({
     asNavFor: '.link1-nav1'
 });
 $('.link1-nav1').slick({
+    slidesToShow: 5,
     slidesToScroll: 1,
     asNavFor: '.link1-for1',
-    centerMode: true,
+    centerMode: false,
     variableWidth: true,
     infinite: true,
     arrows: false,
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [
+        {
+            breakpoint: 1199,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        }
+    ]
 });
 
 $('.link2-for2').slick({
