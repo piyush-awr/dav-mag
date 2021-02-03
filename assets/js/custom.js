@@ -1,15 +1,3 @@
-// window.onscroll = function() { stickyMenu() };
-// var mainNav = document.getElementById("main-nav");
-// var fixedMenu = mainNav.offsetTop;
-
-// function stickyMenu() {
-//     if (window.pageYOffset > fixedMenu) {
-//         mainNav.classList.add("fixedMenu");
-//     } else {
-//         mainNav.classList.remove("fixedMenu");
-//     }
-// }
-
 
 $('#main-menu-button').click(function() {
     $('#main-menu').toggleClass('open-side-menu');

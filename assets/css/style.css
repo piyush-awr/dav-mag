@@ -461,22 +461,22 @@ header.top-bar span.top-logo .dm-top-logo {
 
 .search-wrapper {
     position: absolute;
-    top: 80px;
+    top: 70px;
     left: 0;
     width: 100%;
-    background: #191A1B;
+    background: #F5F5F5;
     padding-top: 16px;
     padding-bottom: 16px;
     z-index: 1010;
     text-align: center;
     border-top: 1px solid #fff;
     display: none;
+    box-shadow: 0px 2px 5px 1px rgb(0,0,0,0.2);
 }
 
 form.main-search {
     margin: auto;
     width: 100%;
-    max-width: 700px;
     position: relative;
 }
 
@@ -491,7 +491,7 @@ form.main-search {
     width: 100%;
     margin: 0;
     height: 56px;
-    background: #fff;
+    background: #F5F5F5;
     padding: 12px 50px 12px 80px;
     border-radius: 5px;
     font-size: 20px;
@@ -499,37 +499,39 @@ form.main-search {
     color: #000;
     letter-spacing: -2px;
     font-weight: 500;
-    border: 1px solid #979797;
+    border: none;
+    text-align: center;
 }
 
 .search-wrapper form.main-search .search-btn {
     position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(../images/search-icon.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: transparent;
-    width: 56px;
-    height: 56px;
+    top: 6px;
+    right: 0;
+    width: 66px;
+    height: 42px;
     cursor: pointer;
     border: 0 none;
+    background: transparent;
     padding: 0;
-    font-size: 0;
-    border-right: 1px solid #979797;
+    font-size: 16px;
+    font-weight: bold;
+    color: #E50914;
+    border: 2px solid #E50914;
+    border-radius: 5px;
 }
 
-.search-wrapper form.main-search .search-btn:hover {
-    background-image: url(../images/search-icon-hover.png);
+.search-wrapper form.main-search .search-btn:hover{
+    background-color: #E50914;
+    color: #fff;
 }
 
 .search-wrapper form.main-search .close-search-btn {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     background-image: url(../images/close-search.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center left;
     background-color: transparent;
     background-size: 18px 18px;
     width: 45px;
@@ -1461,6 +1463,7 @@ ul.trending-detail-info li img {
 .recensioni-inner-content .recensioni-star {
     margin-top: 10px;
 }
+
 
 .recensioni-inner-content .recensioni-star .fa {
     color: #fff;
@@ -3955,9 +3958,6 @@ ul.more-boom-by-info li a:hover:after {
     .main-nav .navbar form button.search-btn {
         padding: 8px 0 8px 5px;
     }
-    .search-wrapper {
-        top: 71px;
-    }
 
     .section-sub-heading .red-sanremo-img {
         height: 45px;
@@ -4746,55 +4746,55 @@ ul.more-boom-by-info li a:hover:after {
         line-height: 2;
         letter-spacing: 0px;
     }
-    .all-video-listing{
+    .listing-section{
         padding: 60px 0 20px 0;
     }
-    .all-video-listing .video-listing-header{
+    .listing-section .listing-header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
-    .all-video-listing .video-listing-header h2{
+    .listing-section .listing-header h2{
         font-size: 35px;
         color: #000;
     }
-    .video-listing-header .sortby-button button{
+    .listing-header .sortby-button button{
         font-weight: bold;
         align-items: baseline;
         font-size: 14px;
         background: #F5F5F5;
     }
-    .video-listing-header .sortby-button button img{
+    .listing-header .sortby-button button img{
         height: 10px;
         margin-right: 5px;
     }
-    .video-listing-header .sortby-button .dropdown-menu a{
+    .listing-header .sortby-button .dropdown-menu a{
         font-size: 14px;
     }
-    .video-listing-header .sortby-button .dropdown-menu a:hover{
+    .listing-header .sortby-button .dropdown-menu a:hover{
         background-color: #E50914;
         color: #fff;
     }
-    .all-video-listing .videos-archive .video-container{        
+    .listing-section .content-archive .video-container{        
         background: #F5F5F5;
         border-radius: 5px;
     }
-    .videos-archive .video-container .video-small-img{
+    .content-archive .video-container .video-small-img{
         width: 100%;
         position: relative;
     }
-    .videos-archive .videos-col a{
+    .content-archive .videos-col a{
         position: absolute;
         bottom: -12%;
         left: 7%;
     } 
-    .videos-archive .videos-col a img{
+    .content-archive .videos-col a img{
         width: 30px;
         height: 30px;
         z-index: 999;
     }
-    .videos-archive .videos-col h4{
+    .content-archive .videos-col h4{
         padding: 20px 10px 20px 40px;
         font-size: 16px;
     }
@@ -5147,8 +5147,69 @@ ul.more-boom-by-info li a:hover:after {
         left: 0;
         top: 9.5px;
     }
-    
-    
+    .recensioni-inner-box.review-box{
+        margin-top: 0;
+    }
+    .recensioni-inner-content.review-content p{
+        font-size: 16px;
+        height: 65px;
+    }
+    .recensioni-inner-content.review-content .recensioni-star{
+        margin-top: 5px;
+    }
+    .recensioni-inner-content.review-content .recensioni-star .fa{
+        font-size: 12px;
+    }
+    .article-text-section .review-comments{
+        display: flex;
+        align-items: center;
+    }
+    .review-comments .review-star .fa{
+        font-size: 12px;
+        color: #FFC107;;
+    }
+    .review-comments .comments-count{
+        margin-left: 20px;
+    }
+    .review-comments .comments-count a{
+        color: #E50914;
+        border-bottom: 1px solid  #E50914;
+        font-weight: 500;
+    }
+    .thankyou-section{
+        height: 100vh;
+    }
+    .thankyou-content .like-icon{
+        background-color: #E50914;
+        padding: 35px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+    .thankyou-content .like-icon img{
+        width: 50px;
+    }
+    .thankyou-content .inner-heading{
+        margin-bottom: 20px;
+    }
+    .thankyou-content .thankyou-para{
+        margin-bottom: 50px;
+    }
+    .thankyou-content .back-button a{
+        color: #E50914;
+        border: 1px solid #E50914;
+        padding: 13px 30px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .thankyou-content .back-button a:hover{
+        background-color:  #E50914;
+        color: #fff;
+    }
+    .thank-you-footer .footer-logo-line{
+        justify-content: center;
+        margin-top: 40px;
+    }
 
 
 @media (max-width: 1199.98px) {
@@ -5558,7 +5619,7 @@ ul.more-boom-by-info li a:hover:after {
     .advertising-cards .contactus-card p{
         font-size: 13px;
     }
-    .all-video-listing .video-listing-header h2{
+    .listing-section .listing-header h2{
         font-size: 30px;
     }
     .product-collection .single-product-info{
@@ -5727,18 +5788,15 @@ ul.more-boom-by-info li a:hover:after {
     .search-wrapper {
         top: 60px;
     }
-    form.main-search {
-        max-width: 500px;
-    }
     .search-wrapper form.main-search .form-control {
         height: 50px;
         padding: 9px 50px 9px 60px;
         font-size: 18px;
     }
     .search-wrapper form.main-search .search-btn {
-        width: 50px;
-        height: 50px;
-        background-size: 20px 20px;
+        top: 4px;
+        width: 62px;
+        height: 40px;
     }
     .search-wrapper form.main-search .close-search-btn {
         height: 50px;
@@ -6947,7 +7005,7 @@ ul.more-boom-by-info li a:hover:after {
     .section-sub-heading.side-heading::before{
         top: 11px;
     }
-    .video-listing-header .shortby-button a{
+    .listing-header .shortby-button a{
         font-size: 14px;
     }
     .shopping-features .shop-feature-2{
@@ -6994,6 +7052,12 @@ ul.more-boom-by-info li a:hover:after {
     .collection-category-sub img{
         height: 185px;
     }
+    .thankyou-content .like-icon{
+        padding: 30px;
+    }
+    .thankyou-content .like-icon img{
+        width: 40px;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -7003,6 +7067,20 @@ ul.more-boom-by-info li a:hover:after {
     
     .navbar-manu-outer {
         width: 80%;
+    }
+    .search-wrapper{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .search-wrapper form.main-search .search-btn {
+        top: 4px;
+        width: 42px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .search-wrapper form.main-search .close-search-btn {
+        height: 40px;
+        background-size: 12px 12px;
     }
     .top-hero-banner {
         height: 340px;
@@ -7491,18 +7569,18 @@ ul.more-boom-by-info li a:hover:after {
     .advertising-cards .contactus-card h6{
         font-size: 14px;
     }
-    .all-video-listing .video-listing-header h2{
+    .listing-section .listing-header h2{
         font-size: 24px;
     }
-    .videos-archive .videos-col a{
+    .content-archive .videos-col a{
         bottom: -8%;
         left: 4%;
     } 
-    .videos-archive .videos-col a img{
+    .content-archive .videos-col a img{
         width: 40px;
         height: 40px;
     }
-    .videos-archive .videos-col h4{
+    .content-archive .videos-col h4{
         padding: 25px 10px 20px 50px;
     }
     .shop-banner .banner-inner-text h1 {
@@ -7542,6 +7620,11 @@ ul.more-boom-by-info li a:hover:after {
     .article-text ul li::before{
         top: 9px;
     }
+    .thankyou-content .inner-heading .section-sub-heading:before{
+        left: 5px;
+        top: 13px;
+        left: -15px;
+    }
     
 }
 
@@ -7551,6 +7634,15 @@ ul.more-boom-by-info li a:hover:after {
     }
     .serie-small-slide-inner {
         width: 192px;
+    }
+    .thankyou-content .inner-heading .section-sub-heading{
+        font-size: 22px;
+    }
+    .thankyou-content .inner-heading .section-sub-heading:before{
+        left: -12px;
+        top: 13px;
+        width: 8px;
+        height: 8px;
     }
 }
 
@@ -7673,6 +7765,9 @@ ul.more-boom-by-info li a:hover:after {
     .tv-category-list .tv-category-top li:nth-of-type(2n) {
         text-align: left;
     }
+    .inner-heading .section-sub-heading:before{
+        left: 20px;
+    }
     .category-post-inner {
         height: 220px;
     }
@@ -7690,6 +7785,13 @@ ul.more-boom-by-info li a:hover:after {
     }
     .product-collection .single-product-info img{
         height: 190px;
+    }
+    .thankyou-content .inner-heading .section-sub-heading{
+        font-size: 20px;
+    }
+    .thankyou-content .inner-heading .section-sub-heading:before{
+        left: -8px;
+        top: 11px;
     }
 }
 
